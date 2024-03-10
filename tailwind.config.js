@@ -9,6 +9,10 @@ export default {
       colors : {
         'linear-pink' : '#EB568E',
         'linear-blue' : '#144EE3',
+        'solid-bg' : '#0B101B'
+      },
+      fontWeight : {
+        'super-bold' : '900'
       }
     },
   },

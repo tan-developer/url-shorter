@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import { BrowserRouter   , Routes,} from 'react-router-dom'
 import LinearGardientLogo from './components/LinearGardientLogo'
+import LeftHeader from './components/LeftHeader'
 
 const App : React.FC = () =>  {
 
@@ -9,6 +10,7 @@ const App : React.FC = () =>  {
       <BrowserRouter>
         <>
           <LinearGardientLogo />
+          <LeftHeader />
           <Suspense fallback={'Loading...'}>
             <Routes>
 
