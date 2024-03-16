@@ -1,0 +1,55 @@
+table[role="table"] {
+
+  & th[role="columnheader"] {
+    // display: none !important;
+    color: theme('colors.lite');
+    background-color:rgba(#ffffff, .05);
+    backdrop-filter: blur(2px);
+    padding: theme('padding.[3.5]');
+    text-align: left;
+
+    &:first-child {
+      border-top-left-radius: theme('padding.2');
+    }
+    &:last-child {
+      border-top-right-radius: theme('padding.2');
+    }
+
+    margin-bottom: 1rem;
+  }
+  tbody tr[role="row"] {
+    background-color: r !important;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: '';
+      transform: translate(0 , 5%);
+      width: 100%;
+      height: 90%;
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      background-color:rgba(#ffffff, .02);
+      backdrop-filter: blur(3px);
+    }
+    &:first-child:after {
+      content: '';
+      transform: translate(0 , 10%);
+      width: 100%;
+      height: 87.5%;
+      position: absolute;
+      left: 0;
+      z-index: 0;
+      backdrop-filter: blur(2px);
+    }
+
+    td {
+      z-index: 2;
+      position: relative;
+    }
+  }
+  td[role='cell'] {
+    color : theme('colors.lite');
+  }
+}
