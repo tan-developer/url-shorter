@@ -8,7 +8,7 @@ import { CiLogin } from "react-icons/ci";
 const Header : React.FC = () => {
   return (
     <React.Fragment>
-      <Wrapper className="flex fixed justify-between w-screen px-16 pt-6 items-center  backdrop-blur-[1px]">
+      <Wrapper className="flex fixed justify-between w-screen md:px-16 px-1 md:py-6 py-3 items-center  backdrop-blur-[3px] z-10">
         <LinearGardientLogo />
         <Wrapper className="[&>*:not(:last-child)]:mr-3">
           <ButtonSolid className="bg-[#181E29] border-zinc-700 text-xs">
