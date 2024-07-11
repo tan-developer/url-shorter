@@ -1,10 +1,10 @@
 import React from "react";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 const SvgMotion: React.FC = () => {
   const svgVariants = {
     initial: {
       opacity: 1,
-      scale: 0.85,
+      scale: 0.9,
       filter : "blur(5px)"
     },
     animate: {
@@ -20,18 +20,10 @@ const SvgMotion: React.FC = () => {
 
   return (
     <motion.svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
       variants={svgVariants}
       initial="initial"
       animate="animate"
-      width="641"
-      height="640"
-      viewBox="0 0 641 640"
+      width="641" height="640" viewBox="0 0 641 640" fill="none" xmlns="http://www.w3.org/2000/svg"
     >
       
         <path
